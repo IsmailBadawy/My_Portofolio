@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10%;
+    padding-block: 2%;
+    color: rgb(41, 40, 40);
+
+    & a {
+        text-decoration: none;
+        color: rgb(41, 40, 40);
+    }
+
+    & .sign-in,
+    & .register {
+        margin-inline: 0.7rem;
+        border: .5px solid rgb(54, 54, 54);
+        padding: 7px 15px;
+        border-radius: 22px;
+        font-weight: 550;
+        transition: 0.2s;
+        font-size: 13px;
+    }
+
+    & .sign-in:hover,
+    & .register:hover {
+        background-color: rgb(28, 28, 29);
+        color: rgb(81, 136, 209);
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+
+    & .logo .fa-solid {
+        font-size: 25px;
+    }
+
+    & .links .price {
+        background-color: rgb(34, 34, 51);
+        color: rgb(81, 136, 209);
+        border: 1px solid rgb(61, 61, 61);
+        border-radius: 20px;
+        padding: 7px 12px;
+    }
+
+    & .links .price:hover {
+        color: red;
+    }
+
+}

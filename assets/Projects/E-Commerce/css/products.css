@@ -1,0 +1,86 @@
+.contents {
+    margin-inline: auto;
+    width: 80%;
+
+    & .recomened {
+        margin: 6px;
+        padding: 2% 3% 2% 7%;
+        letter-spacing: 4px;
+        font-size: 12px;
+    }
+
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+
+    & .card {
+        width: 300px;
+        box-shadow: 5px 5px 10px rgba(15, 9, 9, 0.438);
+        border-radius: 10px;
+        transition: .2s;
+    }
+
+    & .photo {
+        width: 300px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    & .card-title {
+        padding-inline: 6.5px;
+        line-height: 1.35;
+        background-color: white;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    & .card-title .title {
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        padding: 10px 12px 10px 0px;
+    }
+
+    & .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 15px;
+        color: crimson;
+    }
+
+    & .card-footer .price {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: crimson;
+    }
+
+    & .btn {
+        background-color: rgb(57, 137, 228);
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+        transition: .2s;
+        margin: 10px;
+        border: none;
+    }
+
+    & .card:hover {
+        transform: scale(1.01);
+    }
+
+    & .btn:hover {
+        transform: scale(0.9);
+    }
+
+
+
+
+
+
+
+
+}

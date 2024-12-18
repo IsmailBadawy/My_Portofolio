@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/icon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Lib CSS Files -->
+  <link href="assets/Lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/Lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/Lib/aos/aos.css" rel="stylesheet">
+  <link href="assets/Lib/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/Lib/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Personal</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Projects.html " class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Projects</h1>
+              <p class="mb-0">I specialize in creating seamless and visually engaging user experiences, with a strong
+                focus on front-end development and UI/UX design. My portfolio showcases a range of projects where I’ve
+                applied my skills in designing responsive websites and interactive applications. I take pride in
+                delivering high-quality solutions that meet both client and user needs.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <!-- Start Portfolio Filters -->
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-landing">Landing Page</li>
+            <li data-filter=".filter-crud">CRUD</li>
+            <li data-filter=".filter-E">E-Commerce</li>
+            <li data-filter=".filter-logic">Logic</li>
+            <li data-filter=".filter-dashboard">DashBoard</li>
+          </ul>
+          <!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Start Portfolio Item 1 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-landing">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/LP3.png" style="width: 500px;aspect-ratio: 3/2;" class="img-fluid"
+                  alt="">
+                <div class="portfolio-info">
+                  <h4>Landing page 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/Projects/Landing-page-5/index.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item 1 -->
+
+            <!-- Start Portfolio Item 2 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-landing">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/LP1.png" style="width: 500px;aspect-ratio: 3/2;" class="img-fluid"
+                  alt="">
+                <div class="portfolio-info">
+                  <h4>Landing page 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/Projects/Landing-page-6/index.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item 2 -->
+
+            <!-- Start Portfolio Item 3 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-logic">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/calc.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/Projects/Basic-calculator/index.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item 3 -->
+
+            <!-- Start Portfolio Item 4 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-landing">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/LP2.png" style="width: 500px;aspect-ratio: 3/2;" class="img-fluid"
+                  alt="">
+                <div class="portfolio-info">
+                  <h4>Landing Page 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/Projects/Landing-page-1/index.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item 4 -->
+
+            <!-- Start Portfolio Item 5 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-logic">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/calculator.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/Projects/Calculator/index.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item 5 -->
+
+            <!-- Start Portfolio Item 6 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-landing">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/LD3.png" style="width: 500px;aspect-ratio: 3/2;" class="img-fluid"
+                  alt="">
+                <div class="portfolio-info">
+                  <h4>Product 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/Projects/Landing-page-4/index.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item 6 -->
+
+            <!-- Start Portfolio Item 7 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-E">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/e-commerce.png" style="width: 500px;aspect-ratio: 3/2;" class="img-fluid"
+                  alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/Projects/E-Commerce/index.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item 7 -->
+
+            <!-- Start Portfolio Item 8 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-crud">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/crud.png" style="width: 500px;aspect-ratio: 2/2;" class="img-fluid"
+                  alt="">
+                <div class="portfolio-info">
+                  <h4>Books 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/Projects/CRUD-1/index.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item 8 -->
+
+            <!-- Start Portfolio Item 9 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-landing">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/LD2.png" style="width: 500px;aspect-ratio: 3/2;" class="img-fluid"
+                  alt="">
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/Projects/Landing-page-3/index.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item 9 -->
+
+            <!-- Start Portfolio Item 10 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-landing">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/ZLP.png" style="width: 500px;aspect-ratio: 3/2;" class="img-fluid"
+                  alt="">
+                <div class="portfolio-info">
+                  <h4>Product 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/Projects/Z-Land/index.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item 10 -->
+
+            <!-- Start Portfolio Item 11 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dashboard">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/LD4.png" style="width: 500px;aspect-ratio: 3/2;" class="img-fluid"
+                  alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/Projects/Landing-page-2/index.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item 11 -->
+
+            <!-- Start Portfolio Item 12 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-landing">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/plants.png" style="width: 500px;aspect-ratio: 3/2;" class="img-fluid"
+                  alt="">
+                <div class="portfolio-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/Projects/Planets/sun.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item 12 -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Personal</h3>
+      <p>Front-End Developer | Passionate about crafting responsive and user-friendly web applications.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://wa.me/201118349286" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.facebook.com/som3a1996/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/ismail_badawyy/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ismail-badawy-675a852b8" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+
+          Designed by <a href="about.html">ismail Badawy</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Lib JS Files -->
+  <script src="assets/Lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/Lib/aos/aos.js"></script>
+  <script src="assets/Lib/typed.js/typed.umd.js"></script>
+  <script src="assets/Lib/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/Lib/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/Lib/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/Lib/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/Lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/Lib/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

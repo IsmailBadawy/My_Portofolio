@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Electrolize&family=Faculty+Glyphic&family=Raleway:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator-container container  d-flex flex-column align-items-center justify-content-center ">
+        <br>
+        <a class="back" href="../../../Projects.html" style="padding: 15px; border-radius: 10px; border: 2px solid goldenrod; background-color: black; color: goldenrod; text-decoration: none; font-size: 1rem; font-weight: bold;">Back to projects</a>
+
+        <div class="userView d-flex flex-column">
+            <h1 class="text-capitalize text-center py-5 mt-3">basic calculator <i class="fa fa-calculator cal"'></i></h1>
+    <label for="inp1" class="pb-3 text-center text-info"> please insert First number :</label>
+                    <input type="text " id="inp1"
+                        class="mb-3 w-75 m-auto bg-success-subtle border-0 text-center text-primary fw-bold">
+                    <label for="inp2" class="pb-3 text-center text-info"> please insert Second number :</label>
+                    <input type="text " id="inp2"
+                        class="w-75 m-auto bg-success-subtle border-0 text-center text-primary fw-bold">
+
+        </div>
+
+        <h5 class="pt-4 text-light fs-6 text-capitalize text-center px-3"> please choose Arithmetic Operators from here to Calculate</h5>
+        <div class="buttons mt-1">
+            <button class=" rounded py-2 px-3 border-0 text-white fs-5" onclick="Plus()"><i
+                    class="fa-solid fa-plus"></i></button>
+            <button class=" rounded py-2 px-3 border-0  text-white fs-5" onclick="Minus()"><i
+                    class="fa-solid fa-minus"></i></button>
+            <button class=" rounded py-2 px-3 border-0  text-white fs-5" onclick="Multiplication()"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <button class=" rounded py-2 px-3 border-0  text-white fs-5" onclick="Obelus()"><i
+                    class="fa-solid fa-divide"></i></button>
+        </div>
+        <h3 class="text-center py-5 text-warning"> Result is : <p id="result" class=" d-inline text-light  "></p>
+        </h3>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

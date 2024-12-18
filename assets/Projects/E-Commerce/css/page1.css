@@ -1,0 +1,54 @@
+.top-img {
+    position: relative;
+    background-image: url(../imges/E-commerce.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.content {
+    font-size: 2.2rem;
+    position: absolute;
+    top: 20%;
+    right: 55%;
+    text-align: center;
+    letter-spacing: 3px;
+
+
+    & .upper {
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+    .men {
+        margin-top: 11px;
+    }
+
+    .free-shipping {
+        font-size: 1.5rem;
+    }
+
+    & button {
+        width: 140px;
+        padding: 10px;
+        background-color: rgb(33, 33, 34);
+        color: aliceblue;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: .2s;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    & button:hover {
+        color: red;
+        background-color: azure;
+        transform: scale(0.9);
+    }
+
+}

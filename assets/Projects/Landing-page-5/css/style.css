@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Electrolize&family=Faculty+Glyphic&family=Raleway:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --main-color: #FFFFFF;
+    --dark-color: #111;
+    --default-color: #A9A9A9;
+    --heading-color: #46235C;
+    --accent-color: #46235C;
+    --sectionColor: #c0c0c07c;
+    --orang-Color: #fd7e14;
+    --babyBlue-Color: #0dcaf0;
+    --brown-Color: #dc3545;
+    --mov-Color: #6f42c1;
+    --green-Color: #198754;
+    --pink-Color: #d63384;
+    --green-Check-Color: #059652;
+
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--main-color);
+}
+
+::selection {
+    color: rgb(216, 170, 18);
+}
+
+.header {
+    background-color: var(--default-color);
+}
+
+.nav-item a,
+.logo a {
+    transition: 0.3s;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.nav-item a:focus,
+.nav-item a:active,
+.nav-item a:hover {
+    color: var(--accent-color);
+
+}
+
+.navbar-collapse button,
+.cont button,
+.details2 button {
+    background-color: var(--accent-color);
+    transition: 0.3s;
+}
+
+.navbar-collapse button:hover,
+.cont button:hover,
+.details2 button:hover,
+.button-action button:hover {
+    opacity: 0.75;
+}
+
+.dropdown:hover .menu1 {
+    display: block;
+    
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 0;
+    
+}
+
+.dropdown-submenu:hover .menu2 {
+    display: block;
+}
+.dropdown a
+{
+    background-color: var(--default-color);
+}
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/hero-bg-abstract.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000070;
+    
+}
+
+.cont h2 {
+    padding-top: 250px;
+    color: var(--default-color);
+    font-size: calc(1.4rem + 1.9vw);
+    font-family: Raleway;
+
+}
+
+.cont p {
+    font-size: calc(0.6rem + 0.8vw);
+    color: #7c7c7ce1;
+}
+
+.card {
+    background-color: #ffffffe3;
+}
+
+.card i {
+    font-size: 2.2rem;
+    color: var(--accent-color);
+}
+
+.card a {
+    font-size: 1.2rem;
+    color: var(--heading-color);
+}
+
+.card p {
+    color: #2c2c2c7e;
+}
+
+.card:hover a {
+    color: var(--accent-color);
+}
+
+.about-section h2,
+.testimonials-section h2,
+.service-section h2,
+.portofolio-section h2,
+.team-section h2,
+.pricing-section h2,
+.ask-section h2,
+.contact-section h2 {
+    color: var(--heading-color);
+}
+
+.bg-text {
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    font-size: 3rem;
+}
+
+.nums {
+    background-color: var(--sectionColor);
+}
+
+.num span {
+    color: var(--accent-color);
+    font-size: 3rem;
+}
+
+.num p {
+    color: var(--default-color);
+}
+
+.contImg h2 {
+    color: var(--heading-color);
+}
+
+.contImg p {
+    font-size: 1.1rem;
+}
+
+.img .link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+}
+
+.icon {
+    font-size: 2rem;
+    color: var(--main-color);
+    transition: transform 0.2s ease-in-out;
+    padding: 20px;
+    border: 1px solid var(--mov-Color);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.img:hover .icon {
+    animation: pulse 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        background-color: var(--accent-color);
+
+    }
+
+    50% {
+        transform: scale(1.2);
+        background-color: var(--accent-color);
+
+    }
+
+    100% {
+        transform: scale(1.4);
+        background-color: var(--accent-color);
+
+    }
+}
+
+.img-bar {
+    background-color: var(--sectionColor);
+}
+
+.img-bar .imgs {
+    width: 120px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.img-bar .imgs:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.carousel-item img {
+    border-radius: 50%;
+    width: 80px;
+    height: auto;
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(200deg);
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+}
+
+.carousel-indicators button {
+    background-color: var(--accent-color) !important;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--heading-color);
+}
+
+.service,
+.team,
+.ask {
+    background-color: var(--sectionColor);
+    font-family: Raleway;
+
+}
+
+.cards .card {
+    max-width: 450px;
+
+}
+
+.cards .card h5 {
+    color: var(--heading-color) !important;
+}
+
+.card .icon {
+    background-color: var(--main-color);
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    transition: 0.5s;
+    font-size: 2.2rem;
+}
+
+.card .icon1 {
+    color: var(--babyBlue-Color);
+}
+
+.card .icon2 {
+    color: var(--orang-Color);
+}
+
+.card .icon3 {
+    color: var(--green-Color);
+}
+
+.card .icon4 {
+    color: var(--brown-Color);
+}
+
+.card .icon5 {
+    color: var(--mov-Color);
+}
+
+.card .icon6 {
+    color: var(--pink-Color);
+}
+
+.card a:hover .icon1 {
+    background-color: var(--babyBlue-Color);
+    color: var(--main-color);
+}
+
+.card a:hover .icon2 {
+    background-color: var(--orang-Color);
+    color: var(--main-color);
+}
+
+.card a:hover .icon3 {
+    background-color: var(--green-Color);
+    color: var(--main-color);
+}
+
+.card a:hover .icon4 {
+    background-color: var(--brown-Color);
+    color: var(--main-color);
+}
+
+.card a:hover .icon5 {
+    background-color: var(--mov-Color);
+    color: var(--main-color);
+}
+
+.card a:hover .icon6 {
+    background-color: var(--pink-Color);
+    color: var(--main-color);
+}
+
+.sec-action,
+.sec-action button {
+    font-family: Roboto;
+    background-color: var(--accent-color);
+}
+
+.sec-action button {
+    border: 2px solid var(--main-color);
+    transition: 0.3s;
+}
+
+.portofolio-list .link {
+    transition: 0.3s;
+    font-family: Raleway;
+}
+
+.portofolio-list .link:hover,
+.portofolio-list .link:active {
+    color: var(--accent-color) !important;
+}
+
+.content {
+    width: 94.5%;
+    left: 2.8%;
+    bottom: 0;
+    background-color: #ffffffb2;
+    transform: translateY(0);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.position-relative:hover .content {
+    opacity: 1;
+}
+
+.title-img h5 {
+    color: var(--heading-color);
+}
+
+.title-img p {
+    color: var(--default-color);
+}
+
+.scop i {
+    color: var(--default-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.scop i:hover {
+    color: var(--accent-color);
+}
+
+.overflow {
+    top: 60%;
+    left: 20%;
+}
+
+.overflow i {
+    color: var(--default-color);
+    background-color: #e2e2e2d8;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.card-team:hover .overflow i {
+    opacity: 1;
+}
+
+.overflow i:hover {
+    color: var(--main-color);
+    background-color: var(--accent-color);
+}
+
+.pricing-items {
+    font-family: raleway;
+}
+
+.pricing-items button {
+    margin-left: 25%;
+    background-color: var(--main-color);
+    border: 1px solid var(--default-color);
+    color: var(--default-color);
+}
+
+.pricing-item p,
+.month {
+    color: var(--default-color);
+}
+
+.pricing-item h3 {
+    color: var(--heading-color);
+}
+
+.pricing-item .price,
+.pricing-item sup {
+    color: var(--accent-color);
+}
+
+.pricing-item .fa-check {
+    color: var(--green-Check-Color);
+}
+
+.best,
+.best button,
+.pricing-item button:hover {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    border: 1px var(--main-color) solid;
+    transition: 0.3s;
+}
+
+.best button:hover {
+    background-color: #52a6e2e0;
+}
+
+.pricing-item button {
+    transition: 0.3s;
+}
+
+.divQ {
+    width: 65vw;
+}
+
+.question {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.question-btn {
+    width: fit-content;
+}
+
+.card-body {
+    color: var(--default-color);
+}
+
+.question-btn:hover,
+.question-btn:focus,
+.card-body:focus {
+    color: var(--accent-color);
+}
+
+.ifram {
+    width: 100%;
+    height: 270px;
+}
+
+.info-item i {
+    background-color: var(--accent-color);
+}
+
+.info-item-detials h4 {
+    color: var(--heading-color);
+}
+
+.inputs button {
+    background-color: var(--accent-color);
+    transition: 0.3s;
+}
+
+.inputs button:hover {
+    background-color: #46a0e0;
+}
+
+.footer {
+    background-color: var(--sectionColor);
+    border-top: 1px solid #32a7fa54;
+    font-family: raleway;
+}
+
+.footer h5 {
+    color: var(--heading-color);
+}
+
+.footer a {
+    text-decoration: none;
+    color: #444444;
+
+}
+
+.social-icon a {
+    border: var(--accent-color) solid 1px;
+    color: var(--accent-color);
+    transition: 0.3s;
+}
+
+.social-icon a:hover {
+    color: var(--main-color);
+    background-color: var(--accent-color);
+}
+
+.footer .footer-bottom {
+    background-color: var(--accent-color);
+    font-size: 0.8rem;
+}
+
+.footer li {
+    font-size: 0.9rem;
+}
+
+.footer .list-unstyled a:hover {
+    color: var(--accent-color);
+}
