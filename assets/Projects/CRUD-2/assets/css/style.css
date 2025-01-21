@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --whiteColor: white;
+    --darkColor: #202020;
+    --secondColor: #450e72;
+    --lightSecondColor: #450e72d2;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--darkColor);
+    color: var(--whiteColor);
+    font-family: cursive;
+}
+
+.line {
+    height: 2px;
+    width: 100px;
+    background: var(--whiteColor);
+}
+
+.line::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 40px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 2px var(--whiteColor);
+}
+#mood
+{
+    right: -150px;
+}
+
+#price::placeholder,
+#taxes::placeholder,
+#ads::placeholder,
+#count::placeholder,
+#discount::placeholder {
+    color: white;
+}
+
+#total {
+    background: red;
+    padding: 6px 3px;
+    border-radius: 6px;
+}
+
+#total::before {
+    content: 'Total :';
+}
+
+#total::after {
+    content: '$';
+}
