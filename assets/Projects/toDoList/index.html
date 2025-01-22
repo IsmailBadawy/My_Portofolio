@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Electrolize&family=Faculty+Glyphic&family=Raleway:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>TO DO LIST</title>
+</head>
+
+<body>
+    <!-- Sart Header -->
+    <div class="head container text-center py-4 ">
+        <h1 id="title" class="text-center m-auto">TO DO LIST. <i class="fa-solid fa-hand-fist"></i></h1>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Inputs -->
+    <div class="inputs container ">
+        <!--Start Task Name -->
+        <div class="input-group mb-3 ">
+            <span class="input-group-text bg-danger-subtle " id="inputGroup-sizing-default">Task Name</span>
+            <input type="text" id="inpName" class="form-control bg-dark text-white" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <!--End Task Name -->
+
+        <!--Start Task Type -->
+        <div class="input-group mb-3">
+            <span class="input-group-text bg-danger-subtle" id="inputGroup-sizing-default">Task Type</span>
+            <input type="text" id="inpType" list="task-options" class="form-control bg-dark text-white"
+                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <datalist id="task-options">
+                <option value="Development">
+                <option value="Testing">
+                <option value="Design">
+                <option value="Research">
+                <option value="Documentation">
+            </datalist>
+        </div>
+        <!--End Task Type -->
+
+        <!--Start Task Start Date & Estimated Date -->
+        <div class="input-group mb-3">
+            <span class="input-group-text bg-danger-subtle">Start Date</span>
+            <input type="date" id="inpStartDate" aria-label="First name" class="form-control bg-dark text-white">
+            <span class="input-group-text bg-danger-subtle">Estimated Time</span>
+            <input type="date" id="inpEndDate" aria-label="First name" class="form-control bg-dark text-white">
+        </div>
+        <!--End Task Date&Time -->
+
+        <!--Start  Task Status -->
+        <div class="input-group mb-3">
+            <select class="form-select bg-dark text-white" id="inpStatus">
+                <option selected disabled>Task Status...</option>
+                <option value="Not Started">Not Started</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed </option>
+                <option value="On Hold">On Hold </option>
+                <option value="Cancelled">Cancelled </option>
+            </select>
+            <label class="input-group-text bg-danger-subtle" for="inpStatus">Choose</label>
+        </div>
+        <!--End  Task Status -->
+
+        <!--Start Task  Priority -->
+        <div class="input-group mb-3 ">
+            <select class="form-select bg-dark text-white" id="inpPriority">
+                <option selected disabled>Task Priority...</option>
+                <option value="1">Low </option>
+                <option value="2">Medium </option>
+                <option value="3">High </option>
+                <option value="3">Urgent </option>
+            </select>
+            <label class="input-group-text bg-danger-subtle" for="inpPriority">Choose</label>
+        </div>
+        <!--End  Task Priority -->
+
+        <!--Start Task  Difficulty Level -->
+        <div class="input-group mb-3">
+            <select class="form-select bg-dark text-white" id="inpLevel">
+                <option selected disabled>Difficulty Level...</option>
+                <option value="1">Easy </option>
+                <option value="2">Medium </option>
+                <option value="3">Hard </option>
+                <option value="3">Very Hard </option>
+            </select>
+            <label class="input-group-text bg-danger-subtle" for="inpLevel">Choose</label>
+        </div>
+        <!--End Task  Difficulty Level -->
+
+        <!--Start Task  Notes&Progress -->
+        <div class="input-group mb-3">
+            <span class="input-group-text bg-danger-subtle">Progress Percentage (%) </span>
+            <input class="form-control bg-dark text-white" type="number" id="inpProgress" name="progress" min="0"
+                max="100" value="0" step="1">
+            <span class="input-group-text bg-danger-subtle" id="inputGroup-sizing-default">Notes</span>
+            <input type="text" id="inpNotes" class="form-control bg-dark text-white" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <!--End Task  Notes&Progress -->
+        <div class="container row  m-auto">
+            <button class="btn btn-success" id="addBtn">Add Task</button>
+            <button class="btn btn-info d-none" id="updateBtn">Update</button>
+        </div>
+    </div>
+    <!-- End Inputs -->
+
+    <div class="container pt-4 pb-2 list ">
+        <h2 class="text-decoration-underline text-center">Tasks <i class="fa-solid fa-calendar-days "></i></h2>
+    </div>
+    <!-- Start Table -->
+    <div class="container table-container">
+        <div class="buttons d-flex justify-content-center gap-5 py-3">
+            <button class="btn btn-secondary" id="tableBtn">Table View</button>
+            <button class="btn btn-secondary " id="cardBtn">Card View</button>
+        </div>
+        <table class="table container table-bordered border-primary-subtle table-secondary text-center ">
+            <thead>
+                <tr class="headTable">
+                    <th scope="col" class="table-success">N.Task</th>
+                    <th scope="col">Task Name</th>
+                    <th scope="col">Task Type</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">Estimated Time</th>
+                    <th scope="col">Task Status</th>
+                    <th scope="col">Task Priority</th>
+                    <th scope="col">Diffuculty Level</th>
+                    <th scope="col">Progress </th>
+                    <th scope="col">Done </th>
+                    <th scope="col">Edit </th>
+                    <th scope="col">Delete </th>
+                    <th scope="col" class="table-danger">Notes</th>
+                </tr>
+            </thead>
+            <tbody class="bodyTable "> <!-- Here will data add dyinemacly --> </tbody>
+        </table>
+    </div>
+    <!-- End Table -->
+
+    <!-- In Small Screen This Show Better-->
+    <div class="container cardTask">
+        <!-- Start Card -->
+        <div class="table-card justify-content-center align-items-center gap-5"><!-- Here will data add dyinemacly --></div>
+        <!-- End Card -->
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
